@@ -7,7 +7,8 @@ FILES=mpo/*.MPO
 for FILE in $FILES
 do
 
-	OUTPUT=`basename -s '.MPO' $FILE`.jpg
+	# OUTPUT=`basename -s '.MPO' $FILE`.jpg
+	OUTPUT=`exiftool -CreateDate -d "%Y-%m-%dT%H-%M-%S" -S -t $FILE`.jpg
 
 	LEFT=converted/left/$OUTPUT
 	RIGHT=converted/right/$OUTPUT
