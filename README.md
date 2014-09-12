@@ -2,7 +2,7 @@
 
 ```
 brew install imagemagick exiftool
-./run.sh
+./convert.sh
 ```
 
 ## Links
