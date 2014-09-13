@@ -2,7 +2,7 @@
 
 ```
 brew install imagemagick exiftool
-./convert.sh
+./convert.sh path/to/somewhere/*.MPO
 ```
 
 ## Links
