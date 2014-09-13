@@ -2,7 +2,7 @@
 
 rm converted/**/* 2&>/dev/null
 
-for FILE in mpo/*.MPO
+for FILE in ${1:-mpo/*.MPO}
 do
 
 	# OUTPUT=`basename -s '.MPO' $FILE`.jpg
