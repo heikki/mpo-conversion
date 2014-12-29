@@ -4,6 +4,9 @@ rm converted/**/* 2&>/dev/null
 
 [ "$#" -gt 0 ] || set -- mpo/*.MPO
 
+SAVEIFS=$IFS
+IFS=$(echo -en "\n\b")
+
 for FILE in $@
 do
 
@@ -21,3 +24,5 @@ do
 	convert $RIGHT $LEFT +append converted/cross-eye/$OUTPUT.jpg
 
 done
+
+IFS=$SAVEIFS
