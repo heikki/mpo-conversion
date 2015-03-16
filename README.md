@@ -1,8 +1,10 @@
 # MPO conversion
 
+> Split mpo files (stereo images from Panasonic Lumix 3D1)
+
 ```
-brew install imagemagick exiftool
-./convert.sh path/to/somewhere/*.MPO
+brew install exiftool
+node convert.js 'path/to/somewhere/*.MPO'
 ```
 
 ## Links
