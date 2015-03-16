@@ -16,6 +16,8 @@ exec('autopano-sift-c - converted/test-left.jpg converted/test-right.jpg | grep 
 		return memo + num;
 	}, 0) / diffs.length;
 
-	console.log('Vertical diff:', avg);
+	console.log('Min', Math.min.apply(Math, diffs));
+	console.log('Max', Math.max.apply(Math, diffs));
+	console.log('Avg', avg);
 
 });
